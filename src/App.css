@@ -1,0 +1,170 @@
+@import "./styles/colors.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5rem;
+}
+
+.app {
+  height: 100vh;
+  background: #000;
+  color: var(--text-base);
+  display: grid;
+  grid-template-columns: 300px 1fr;
+}
+
+.sidebar {
+  box-sizing: border-box;
+  height: 100%;
+  width: 300px;
+  padding: 5px 1em;
+  border-right: 2px solid var(--line);
+  position: relative;
+  top: 0;
+  align-items: start;
+  transition: 300ms ease-in-out;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+.sidebar .sidebar-header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: rgb(6, 206, 66);
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.sidebar .sidebar-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+.sidebar .sidebar-header button {
+  border: none;
+  background: none;
+  display: flex;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 150px 30px;
+}
+
+main.main-botton {
+  justify-content: flex-end;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  color: #e6e6e6;
+}
+
+.info .info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.chat {
+  align-self: center;
+  width: 100%;
+  max-width: 670px;
+  padding: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.233);
+}
+
+.chat form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat textarea {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  color: #e6e6e6;
+  word-wrap: break-word;
+  resize: none; /* Evita que se pueda redimensionar manualmente */
+  overflow: hidden; /* Oculta el scroll */
+  line-height: 1.5;
+  padding: 8px;
+  box-sizing: border-box;
+  min-height: 50px; /* La altura mínima que quieres */
+}
+
+.chat .chat-button {
+  display: flex;
+  align-items: flex-end;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ababab;
+}
+
+.sidebar {
+  width: 240px;
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 16px;
+  box-sizing: border-box;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.sidebar-menu details {
+  margin-bottom: 12px;
+  background-color: #3a3a3a;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.sidebar-menu summary {
+  cursor: pointer;
+  font-weight: bold;
+  outline: none;
+}
+
+.sidebar-menu ul {
+  list-style: none;
+  padding-left: 16px;
+  margin-top: 6px;
+}
+
+.sidebar-menu li {
+  padding: 4px 0;
+  font-size: 14px;
+}
