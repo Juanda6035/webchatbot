@@ -44,7 +44,7 @@ function App() {
       <div className="sidebar">
         <div className="sidebar-header">
           <span className="sidebar-title">GramaSports</span>
-          <MdOutlineSportsSoccer size={22} />
+          <MdOutlineSportsSoccer size={40} />
         </div>
 
         <div className="sidebar-menu">

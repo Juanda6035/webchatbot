@@ -20,7 +20,7 @@ html {
 .sidebar {
   box-sizing: border-box;
   height: 100%;
-  width: 300px;
+  width: 400px;
   padding: 5px 1em;
   border-right: 2px solid var(--line);
   position: relative;
@@ -43,7 +43,7 @@ html {
 }
 
 .sidebar .sidebar-title {
-  font-size: 22px;
+  font-size: 40px;
   font-weight: bold;
 }
 .sidebar .sidebar-header button {
@@ -124,7 +124,7 @@ main.main-botton {
 }
 
 .sidebar {
-  width: 240px;
+  width: 400px;
   background-color: #2d2d2d;
   color: #fff;
   padding: 16px;
@@ -138,11 +138,16 @@ main.main-botton {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 20px;
+  font-size: 50px;
 }
 
 .sidebar-title {
   font-size: 18px;
   font-weight: bold;
+}
+
+.sidebar-menu {
+  font-size: 20px;
 }
 
 .sidebar-menu details {
