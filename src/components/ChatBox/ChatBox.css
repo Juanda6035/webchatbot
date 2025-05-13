@@ -7,13 +7,19 @@
   overflow-y: auto;
   scrollbar-width: none;
 }
-
 .chat-box-item {
+  display: flex;
+  gap: 5px;
+  align-self: flex-end;
+  max-width: 100%; /* No deja que se expanda más del contenedor */
+  flex-wrap: nowrap; /* Evita romper el layout */
+}
+/*.chat-box-item {
   display: flex;
   gap: 5px;
   min-height: 80px;
   align-self: flex-end;
-}
+}*/
 
 .chat-box-item.reciver {
   align-self: flex-start;
