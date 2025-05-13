@@ -4,6 +4,8 @@
   gap: 10px;
   margin-bottom: 30px;
   color: white;
+  overflow-y: auto;
+  scrollbar-width: none;
 }
 
 .chat-box-item {
